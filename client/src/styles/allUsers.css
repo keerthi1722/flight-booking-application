@@ -1,0 +1,58 @@
+.all-users-page{
+    width: 100%;
+    height: 100vh;
+    padding-top: 13vh;
+    padding-left: 3vw;
+    min-height: 100vh;
+    background: url('../assets/bg1.jpg') center center/cover no-repeat;
+    position: relative;
+}
+.all-users-page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.5);
+    z-index: 0;
+}
+.all-users-page > * {
+    position: relative;
+    z-index: 1;
+}
+.all-users-page h2{
+    margin-bottom: 4vh;
+    color: rgba(77, 109, 134, 0.934);
+}
+
+
+.all-users{
+    width: 80%;
+    height: 30vh;
+    margin-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.all-users::-webkit-scrollbar {
+    display: none;
+}
+
+.all-users .user{
+    width: 70%;
+    background-color: rgba(231, 239, 236, 0.416);
+    border-radius: 0.8rem;
+    display: flex;
+    padding: 2vh 2vw;
+    gap: 2vw;
+}
+.all-users .user p{
+
+    margin: 0;
+    color: rgb(36, 132, 173);
+}
+.all-users .user p b{
+    font-weight: 600;
+    color: rgb(32, 97, 124);
+}

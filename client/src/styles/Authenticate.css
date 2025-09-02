@@ -1,0 +1,112 @@
+.AuthenticatePage{
+    width: 100%;
+    height: 100vh;
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/sky.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+.AuthenticatePage::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.62);
+    z-index: 0;
+}
+
+.authForm{
+    padding: 36px 36px 28px 36px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: max-content;
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(270deg, #a18cd1, #fbc2eb, #fad0c4, #43cea2, #185a9d);
+    background-size: 1200% 1200%;
+    animation: authFormGradient 12s ease infinite;
+    border-radius: 1.7rem;
+    box-shadow: 0 12px 40px 0 rgba(80, 80, 180, 0.18), 0 2px 8px 0 rgba(0,0,0,0.08);
+    border: 2.5px solid rgba(120, 80, 255, 0.18);
+    overflow: hidden;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+@keyframes authFormGradient {
+    0% {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100% {background-position:0% 50%}
+}
+.authForm::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+.authForm > * {
+    position: relative;
+    z-index: 1;
+}
+.authForm:hover {
+    box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.18);
+    transform: translateY(-2px) scale(1.012);
+}
+.authForm h2{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 79, 135);
+    font-size: 1.8rem;
+}
+.authFormInputs {
+    width: 100%;
+    height: 50px;
+}
+
+.authFormInputs label{
+    color: rgb(0, 61, 101);
+    /* padding: 0; */
+}
+.authFormInputs input{
+    color: rgb(0, 61, 101);
+    border: none;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0);
+    border: 1px solid #9dc1d975;
+    /* padding: 0; */
+}
+.authForm select {
+    color: rgb(0, 61, 101);
+    border: none;
+    outline: none;
+    background-color: rgba(231, 235, 235, 0);
+    border: 1px solid #9dc1d975;
+    font-size: medium;
+    padding: 15px 10px;
+}
+.authFormInputs input #floatingInput .form-control{
+    padding: 0 !important;
+}
+
+.authForm button{
+    background-color: rgb(0, 108, 197);
+    font-weight: bold;
+    color: rgb(246, 251, 255);
+    height: 50px;
+}
+.authForm p{
+    margin-top: 5%;
+    color: black;
+}
+.authForm p span{
+    margin-top: 5%;
+    color: rgb(0, 68, 107);
+    cursor: pointer;
+}

@@ -1,0 +1,75 @@
+.NewFlightPage{
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding-top: 18vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    background: url('../assets/bg1.jpg') center center/cover no-repeat;
+    position: relative;
+}
+
+.NewFlightPage::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.5);
+    z-index: 0;
+}
+
+.NewFlightPage > * {
+    position: relative;
+    z-index: 1;
+}
+
+.NewFlightPageContainer{
+    width: 44%;
+    background-color: rgba(242, 245, 247, 0.753);
+    padding: 2vh 2%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0.7rem;
+}
+.NewFlightPageContainer button{
+    width: 30%;
+    margin-left: 35%;
+}
+.NewFlightPageContainer h2{
+    margin: 0;
+    margin-bottom: 15px;
+    color: rgb(54, 104, 120);
+    text-align: center;
+}
+.NewFlightPageContainer p b{
+    font-weight: 600;
+}
+.NewFlightPageContainer span{
+    display: grid;
+    grid-template-columns: 67% 30%;
+    gap: 3%;
+}
+.NewFlightPageContainer .newFlightSpan1{
+    display: grid;
+    grid-template-columns: 54% 43%;
+    gap: 3%;
+}
+.NewFlightPageContainer .newFlightSpan2{
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    gap: 3%;
+}
+
+.new-passenger h4{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(48, 91, 114);
+}
+
+.new-passenger-inputs{
+    display: grid;
+    grid-template-columns: 49% 15% 30%;
+    gap: 3%;
+}
+.new-passenger-inputs select{
+    padding-left: 12px;
+}
